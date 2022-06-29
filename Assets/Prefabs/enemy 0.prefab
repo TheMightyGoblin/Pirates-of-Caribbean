@@ -10,8 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 7302292377782879643}
   - component: {fileID: 2002809687736984015}
-  m_Layer: 0
-  m_Name: Enenemy 0
+  - component: {fileID: 4400831412581678062}
+  - component: {fileID: 4282143200897889831}
+  - component: {fileID: 3302348412106705739}
+  - component: {fileID: 4719383287819037944}
+  m_Layer: 7
+  m_Name: enemy 0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,6 +49,69 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1534df1d8c06764c94d46b022731e1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!50 &4400831412581678062
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1676842067670929109}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!70 &4282143200897889831
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1676842067670929109}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.5, y: 1}
+  m_Direction: 0
+--- !u!114 &3302348412106705739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1676842067670929109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bb2680c72f636f4ca506bf9ac221510, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 50
+--- !u!114 &4719383287819037944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1676842067670929109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e00bd5e347870649b0a69836007fb16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 25
 --- !u!1 &5333923342515030838
 GameObject:
   m_ObjectHideFlags: 0
@@ -55,7 +122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6584290213749959098}
   - component: {fileID: 2160976185658880150}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ship (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +184,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 38dabb926c0ed6c43bbc3cb1935711c3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
