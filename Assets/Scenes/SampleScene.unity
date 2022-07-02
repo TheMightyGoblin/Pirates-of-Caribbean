@@ -356,7 +356,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a254dedae5bc33b4fb198c6680bc9307, type: 2}
   - {fileID: 11400000, guid: 47b90e350236ace43a21e91492056e2e, type: 2}
   timeBetweenWaves: 0
-  isLooping: 0
+  isLooping: 1
 --- !u!4 &742452024
 Transform:
   m_ObjectHideFlags: 0
@@ -443,5 +443,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -7226875939014215382, guid: 9bbe943c1960cb448b42b6b9406c466b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9bbe943c1960cb448b42b6b9406c466b, type: 3}

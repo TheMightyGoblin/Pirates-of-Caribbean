@@ -97,7 +97,8 @@ GameObject:
   - component: {fileID: 1829275890}
   - component: {fileID: 4193366982168043443}
   - component: {fileID: -4079917344213755552}
-  - component: {fileID: -7226875939014215382}
+  - component: {fileID: 1279017817003474937}
+  - component: {fileID: 3478738427391718601}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -205,7 +206,7 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.5, y: 1}
   m_Direction: 0
---- !u!114 &-7226875939014215382
+--- !u!114 &1279017817003474937
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -214,7 +215,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 7793438524680465676}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bb2680c72f636f4ca506bf9ac221510, type: 3}
+  m_Script: {fileID: 11500000, guid: 5d6ac93ff12aa4a4d936458d29dcf921, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 9043332834882003915, guid: f89fa9fa8f7eeaa4f8acb11b5fb616e9, type: 3}
+  projectileSpeed: 10
+  projectileLifetime: 5
+  firingRate: 0.2
+  isFiring: 0
+--- !u!114 &3478738427391718601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7793438524680465676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e48778df1f02ad94dabc71547d245710, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
